@@ -14,6 +14,7 @@ Following softwares are installed in order to setup the server:
 - oauth2client
 - sqlalchemy
 
+## Configuration Changes
 Following configuration files are changed:
 - /etc/apache2/sites-available/000-default.conf
 
@@ -34,4 +35,15 @@ The below content is added into the file
 import sys
 sys.path.insert(0,'/var/www/Cataloug-App')
 from application import app as application
+```
+
+## Credentials
+There are two users on server grader and root.
+```
+user: grader
+password: best$123$hello
+```
+```
+user: root
+password: root$123$hello
 ```
